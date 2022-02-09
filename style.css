@@ -70,7 +70,7 @@ p {
 
 /* Headline icons */
 
-div#headline-icons {
+div#headline-icons > ul {
   color: #dbd8d7;
   display: flex;
   justify-content: space-around;
@@ -79,6 +79,24 @@ div#headline-icons {
 div#headline-icons i:hover {
   color: #ff6b00;
   cursor: pointer;
+}
+
+div#vector-design {
+  display: flex;
+  justify-content: flex-end;
+}
+
+img#vector-2 {
+  position: relative;
+  top: 25px;
+  left: 15px;
+}
+
+img#vector-1 {
+  position: relative;
+  top: 20px;
+  right: -60px;
+  z-index: 1;
 }
 
 /* Media query for mobile version */
@@ -114,22 +132,5 @@ div#headline-icons i:hover {
     width: 65%;
     padding: 25px 0;
     font-size: 20px;
-  }
-
-  img#vector-1 {
-    display: block;
-    margin-left: auto;
-  }
-
-  img#vector-2 {
-    display: block;
-    margin-left: auto;
-    margin-top: -80px;
-  }
-
-  img#vector-3 {
-    display: block;
-    margin-left: auto;
-    margin-top: -90px;
   }
 }
