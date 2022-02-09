@@ -18,20 +18,20 @@ header {
 /*Navbar*/
 nav {
   margin: 0 25px;
-  padding: 15px 0px;
+  padding: 30px 0px;
 }
-nav > ul {
+ul {
   display: flex;
   justify-content: space-between;
 }
-nav > ul > li > span {
-  font-size: 0.8rem;
+nav > span {
+  font-size: 1rem;
   font-weight: bold;
 }
-nav > ul > li {
+li {
   list-style: none;
 }
-nav > ul > li > a {
+li > a {
   color: white;
   text-decoration: none;
 }
@@ -41,28 +41,75 @@ section#headline {
   background-color: #1c1a19;
   height: 100vh;
 }
-div#greeting {
-  padding: 80px 20px 0px 20px;
-}
 h1 {
   color: #ff6b00;
   font-family: "Crete Round";
   font-weight: normal;
-  font-size: 56px;
   display: flex;
   flex-direction: column;
 }
 h2 {
   color: #fff5e1;
-  font-size: 24px;
   font-family: "Roboto";
-  padding: 10px 0px;
 }
 p {
   color: white;
-  font-size: 16px;
   font-family: "Poppins";
 }
 
+/*Headline icons*/
+div#headline-icons {
+  color: #dbd8d7;
+  display: flex;
+  justify-content: space-around;
+}
+div#headline-icons i:hover {
+  color: #ff6b00;
+  cursor: pointer;
+}
+/*Media query for mobile version*/
 @media (max-width: 600px) {
+  /*Navbar*/
+  nav {
+    padding: 15px 0px;
+  }
+  nav > span {
+    font-size: 0.8rem;
+  }
+  /*Headline section*/
+  section#headline {
+    padding: 0px 20px 0px 20px;
+  }
+  h1 {
+    font-size: 56px;
+    padding-top: 80px;
+  }
+  h2 {
+    font-size: 24px;
+    padding: 10px 0px 10px 0px;
+  }
+  p {
+    font-size: 16px;
+  }
+  /*Headline icons*/
+  div#headline-icons {
+    width: 65%;
+    padding: 25px 0px;
+    font-size: 20px;
+  }
+  /*Vector design*/
+  img#vector-1 {
+    display: block;
+    margin-left: auto;
+  }
+  img#vector-2 {
+    display: block;
+    margin-left: auto;
+    margin-top: -80px;
+  }
+  img#vector-3 {
+    display: block;
+    margin-left: auto;
+    margin-top: -90px;
+  }
 }
