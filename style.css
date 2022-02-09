@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+@media (max-width: 600px) {
+  /*Header*/
+  header {
+    background-color: #3c3a39;
+    color: white;
+    font-family: "Roboto";
+    width: 100%;
+  }
+  /*Navbar*/
+  nav {
+    margin: 0 25px;
+    padding: 15px 0px;
+  }
+  nav > ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav > ul > li > span {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  nav > ul > li {
+    list-style: none;
+  }
+  nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+  }
+}
