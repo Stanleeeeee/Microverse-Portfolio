@@ -9,8 +9,6 @@
 - HTML
 - CSS
 
-## Screen shot
-
 ## Author
 
 👤 **Virag Kormoczy**
