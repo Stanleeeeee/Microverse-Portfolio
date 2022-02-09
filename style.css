@@ -76,8 +76,8 @@ div#headline-icons > ul {
   justify-content: space-around;
 }
 
-div#headline-icons i:hover {
-  color: #ff6b00;
+div#headline-icons > ul > li > img:hover {
+  box-shadow: 0 0 5px 5px #ff6b00;
   cursor: pointer;
 }
 
