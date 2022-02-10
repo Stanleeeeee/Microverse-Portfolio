@@ -43,6 +43,10 @@ li > a {
   text-decoration: none;
 }
 
+#menu {
+  width: 16px;
+}
+
 /* Headline section */
 
 section#headline {
@@ -77,16 +81,26 @@ div#headline-icons > ul {
 }
 
 div#headline-icons > ul > li > img:hover {
-  box-shadow: 0 0 5px 5px #ff6b00;
   cursor: pointer;
 }
+
+#i-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+#linkedin {
+  display: flex;
+  gap: 3px;
+}
+
+/* Vector design */
 
 div#vector-design {
   display: flex;
   justify-content: flex-end;
 }
-
-/* Vector design */
 
 img#vector-2 {
   position: relative;
