@@ -204,7 +204,7 @@ section#projects {
   height: 300px;
 }
 
-.project-tile img {
+div.project-tile img {
   width: 100%;
   margin: auto;
 }
@@ -322,7 +322,7 @@ button:focus {
 }
 
 #about-me-description {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #fff;
 }
 
 button#resume {
@@ -389,7 +389,6 @@ button#resume {
   background-repeat: no-repeat;
   position: relative;
   top: 80px;
-  left: ;
   z-index: 2;
 }
 
@@ -416,13 +415,13 @@ button#resume {
   margin: 50px 0 50px 0;
 }
 
-.skills-title {
+div.skills-title {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.skills-title img {
+div.skills-title > img {
   width: 18px;
   height: 18px;
 }
