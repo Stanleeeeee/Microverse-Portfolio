@@ -118,7 +118,7 @@ div#headline-icons > ul > li > img:hover {
 }
 
 h3 {
-  font-family: "Crete Round";
+  font-family: "Crete Round", sans-serif;
   color: #fff;
   font-weight: normal;
 }
@@ -239,10 +239,6 @@ div.skills-title {
   div#headline-icons {
     padding-top: 20px;
     width: 50%;
-  }
-  section#projects {
-    font-size: 24px;
-    padding: 0 20px 0 20px;
   }
 
   button {
