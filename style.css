@@ -51,7 +51,6 @@ li > a {
 
 section#headline {
   background-color: #1c1a19;
-  height: 100vh;
 }
 
 h1 {
@@ -73,6 +72,10 @@ p {
 }
 
 /* Headline icons */
+
+div#headline-icons {
+  z-index: 2;
+}
 
 div#headline-icons > ul {
   color: #dbd8d7;
@@ -97,22 +100,89 @@ div#headline-icons > ul > li > img:hover {
 
 /* Vector design */
 
-div#vector-design {
+#vector-design {
+  height: 180px;
+  position: relative;
+  top: -80px;
+  left: 15px;
   display: flex;
   justify-content: flex-end;
-}
-
-img#vector-2 {
-  position: relative;
-  top: 25px;
-  left: 15px;
-}
-
-img#vector-1 {
-  position: relative;
-  top: 20px;
-  right: -60px;
   z-index: 1;
+}
+
+#vector1 {
+  width: 80px;
+  height: 93px;
+  background-image: url("vector/Vector4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 55px;
+  left: 220px;
+  z-index: 3;
+}
+
+#vector2 {
+  width: 16px;
+  height: 40px;
+  background-image: url("vector/Vector1.png");
+  background-repeat: no-repeat;
+  position: relative;
+  left: 215px;
+}
+
+#vector3 {
+  width: 80px;
+  height: 120px;
+  background-image: url("vector/Vector2.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 55px;
+  left: 135px;
+  z-index: 2;
+}
+
+#vector4 {
+  width: 50px;
+  height: 120px;
+  background-image: url("vector/Vector3.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 60px;
+  left: 80px;
+  z-index: 1;
+}
+
+#vector5 {
+  width: 30px;
+  height: 60px;
+  background-image: url("vector/Vector5.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 45px;
+  z-index: 5;
+}
+
+#vector6 {
+  width: 30px;
+  height: 60px;
+  background-image: url("vector/Vector6.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 50px;
+  right: 25px;
+  z-index: 4;
+}
+
+#vector7 {
+  width: 20px;
+  height: 30px;
+  background-image: url("vector/Vector7.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 100px;
+  right: 30px;
+  z-index: 6;
 }
 
 /* Media query for mobile version */
