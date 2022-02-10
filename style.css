@@ -189,31 +189,26 @@ button:focus {
 }
 
 #languages-list,
-#skills-list {
+#skills-list,
+#frameworks-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 35px;
   color: white;
-  font-size: 22px;
   font-family: "Inter", sans-serif;
 }
 
 #skills h3 {
   color: white;
   font-family: "Inter", sans-serif;
-  margin: 50px 0 50px 0;
+  font-weight: 700;
 }
 
 div.skills-title {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 10px;
-}
-
-.orange-icon {
-  width: 18px;
-  height: 18px;
 }
 
 /* Media query for mobile version */
@@ -229,6 +224,11 @@ div.skills-title {
   .title {
     font-size: 56px;
     padding-top: 80px;
+  }
+
+  .description-p {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   h2 {
@@ -330,5 +330,35 @@ div.skills-title {
     font-size: 15px;
     padding: 10px 12px 10px 12px;
     background: rgba(255, 255, 255, 0.3);
+  }
+
+  h2.title {
+    text-align: center;
+    font-size: 72px;
+  }
+
+  button#resume {
+    margin: 15px 0 200px 0;
+  }
+
+  div#about-me-description {
+    background-image: url("images/illustration-about-me-mobile.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  #skills h3 {
+    margin: 50px 0 50px 0;
+  }
+
+  .orange-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  #languages-list,
+  #skills-list,
+  #frameworks-list {
+    font-size: 22px;
   }
 }
