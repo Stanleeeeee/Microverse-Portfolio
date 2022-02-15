@@ -155,6 +155,16 @@ button {
   border: none;
 }
 
+#submit {
+  background-color: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+  border: none;
+  margin-bottom: 100px;
+  width: 131px;
+}
+
 button:hover,
 #submit:hover {
   background-color: #fff5e1;
@@ -224,7 +234,7 @@ div.skills-title {
   font-family: "Inter", sans-serif;
 }
 
-#form-section p {
+#form-section h2 {
   font-size: 32px;
   font-weight: bold;
   color: #172b4d;
@@ -255,16 +265,6 @@ div.skills-title {
   border: none;
   padding: 20px;
   margin-bottom: 20px;
-}
-
-#submit {
-  background-color: #ff6b00;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  color: white;
-  border: none;
-  margin-bottom: 100px;
-  width: 131px;
 }
 
 #form-icons {
