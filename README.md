@@ -2,12 +2,17 @@
 
 # Portfolio
 
-> This is a clone portfolio project from Microverse. Built the navbar and the headline section of the mobile website.
+> This is a clone portfolio project from Microverse. Built the mobile, and the desktop version. The project has 4 main sections, the headline section, projects section, about-me section, and the form section.
 
 ## Built With
 
 - HTML
 - CSS
+
+## Screenshot
+
+- Mobile
+- Desktop
 
 ## Author
 
@@ -27,6 +32,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - The project design is inspired by a Figma template.
+- My coding partner collaborated in the making of the form section.
 
 ## 📝 License
 
