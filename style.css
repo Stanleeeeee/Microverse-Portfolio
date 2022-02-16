@@ -1,3 +1,4 @@
+/* Mobile first version */
 * {
   padding: 0;
   margin: 0;
@@ -51,25 +52,40 @@ li > a {
 
 section#headline {
   background-color: #1c1a19;
+  background-image: url("images/illustration-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 0 20px 150px 20px;
 }
 
 .title {
   color: #ff6b00;
   font-family: "Crete Round", sans-serif;
   font-weight: normal;
+  font-size: 56px;
+  padding-top: 80px;
 }
 
 h2 {
   color: #fff5e1;
   font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  padding: 10px 0 10px 0;
 }
 
 .description-p {
   color: white;
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 /* Headline icons */
+
+div#headline-icons {
+  padding-top: 20px;
+  width: 50%;
+}
 
 div#headline-icons > ul {
   color: #dbd8d7;
@@ -94,73 +110,119 @@ div#headline-icons > ul > li > img:hover {
 
 /* Projects section */
 
+section#projects {
+  padding: 0 20px 100px 20px;
+}
+
 #projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 #h2-projects {
   color: #1c1a19;
   font-family: "Crete Round", sans-serif;
   font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
+  border-bottom: 1px solid #212121;
+}
+
+#orange-project {
+  margin: 50px 0 20px 0;
 }
 
 #orange-h3 {
   font-family: "Crete Round", sans-serif;
   color: #091e42;
   font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 #orange-p {
   font-family: "Inter", sans-serif;
   color: #091e42;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 h3 {
   font-family: "Crete Round", sans-serif;
   color: #fff;
   font-weight: normal;
+  font-size: 32px;
+  padding: 0 0 20px 10px;
 }
 
 div.mini-projects p {
   color: #fff;
   font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 0 10px 10px;
 }
 
 .box {
   border: 1px solid #8993a4;
   font-family: "Inter", sans-serif;
   color: #091e42;
+  padding: 10px 12px 10px 12px;
+  display: inline;
+  font-size: 15px;
+}
+
+.language-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.mini-languages-container {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  padding: 0 0 25px 10px;
 }
 
 .mini-projects {
   background-image: url("images/Img1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .mini-box {
   color: #fff;
   font-family: "Inter", sans-serif;
+  font-size: 15px;
+  padding: 10px 12px 10px 12px;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 /* Buttons */
 
-button {
-  background-color: #ff6b00;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  color: white;
-  border: none;
-}
-
+button,
 #submit {
   background-color: #ff6b00;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   color: white;
   border: none;
+  font-size: 17px;
+  padding: 12px;
+}
+
+#main-project-button {
+  margin-top: 12px;
+}
+
+#submit {
   margin-bottom: 100px;
   width: 131px;
 }
@@ -184,13 +246,21 @@ button:focus,
   color: #5b5957;
 }
 
+button#resume {
+  margin: 15px 0 200px 0;
+}
+
 /* About-me section */
 
 #about-me {
   background-color: #1c1a19;
+  padding: 0 20px 50px 20px;
 }
 
-#about-me-description {
+div#about-me-description {
+  background-image: url("images/illustration-about-me-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
   border-bottom: 1px solid #fff;
 }
 
@@ -199,6 +269,11 @@ button:focus,
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+h2.title {
+  text-align: center;
+  font-size: 72px;
 }
 
 #languages-list,
@@ -210,18 +285,24 @@ button:focus,
   gap: 35px;
   color: white;
   font-family: "Inter", sans-serif;
+  font-size: 22px;
 }
 
 #skills h3 {
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 700;
+  margin: 50px 0 50px 0;
 }
 
 div.skills-title {
   display: flex;
   align-items: baseline;
-  gap: 10px;
+}
+
+.orange-icon {
+  width: 18px;
+  height: 18px;
 }
 
 /* Form section */
@@ -230,16 +311,17 @@ div.skills-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 20px 30px 20px;
+  padding-top: 100px;
   font-family: "Inter", sans-serif;
 }
 
 #form-section h2 {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 700;
   color: #172b4d;
   text-align: center;
   line-height: 44px;
+  padding: 0 30px 0 30px;
 }
 
 #form-section fieldset {
@@ -267,12 +349,6 @@ div.skills-title {
   margin-bottom: 20px;
 }
 
-#form-icons {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .gap {
   margin-right: 7px;
 }
@@ -282,154 +358,16 @@ form {
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #dfe1e6;
-  margin-bottom: 20px;
+  padding: 0 30px 0 30px;
 }
 
-/* Media query for mobile version */
+/* Footer */
 
-@media (max-width: 600px) {
-  section#headline {
-    background-image: url("images/illustration-header-mobile.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    padding: 0 20px 150px 20px;
-  }
-
-  .title {
-    font-size: 56px;
-    padding-top: 80px;
-  }
-
-  .description-p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  h2 {
-    font-size: 24px;
-    padding: 10px 0 10px 0;
-  }
-
-  div#headline-icons {
-    padding-top: 20px;
-    width: 50%;
-  }
-
-  button,
-  #submit {
-    font-size: 17px;
-    padding: 12px;
-  }
-
-  button#main-project-button {
-    margin-top: 12px;
-  }
-
-  #about-me {
-    padding: 0 20px 50px 20px;
-  }
-
-  #projects-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-
-  section#projects {
-    padding: 0 20px 100px 20px;
-  }
-
-  #h2-projects {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 100px;
-    border-bottom: 1px solid #212121;
-  }
-
-  #orange-project {
-    margin: 50px 0 20px 0;
-  }
-
-  #orange-h3 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-
-  #orange-p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .box {
-    padding: 10px 12px 10px 12px;
-    display: inline;
-    font-size: 15px;
-  }
-
-  .language-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-  }
-
-  .mini-projects {
-    height: 390px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-  h3 {
-    font-size: 32px;
-    padding: 0 0 20px 10px;
-  }
-
-  div.mini-projects p {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 0 0 10px 10px;
-  }
-
-  .mini-languages-container {
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
-    padding: 0 0 25px 10px;
-  }
-
-  .mini-box {
-    font-size: 15px;
-    padding: 10px 12px 10px 12px;
-    background: rgba(255, 255, 255, 0.3);
-  }
-
-  h2.title {
-    text-align: center;
-    font-size: 72px;
-  }
-
-  button#resume {
-    margin: 15px 0 200px 0;
-  }
-
-  div#about-me-description {
-    background-image: url("images/illustration-about-me-mobile.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-  }
-
-  #skills h3 {
-    margin: 50px 0 50px 0;
-  }
-
-  .orange-icon {
-    width: 18px;
-    height: 18px;
-  }
-
-  #languages-list,
-  #skills-list,
-  #frameworks-list {
-    font-size: 22px;
-  }
+#form-icons {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
