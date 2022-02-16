@@ -10,9 +10,14 @@
 - CSS
 
 ## Screenshot
+### Mobile
 
-- Mobile
-- Desktop
+![Screenshot from 2022-02-16 22-52-24](https://user-images.githubusercontent.com/79658534/154355395-493f6f10-df11-4852-bc43-8df2a1b14d99.png)
+
+### Desktop
+
+![Screenshot from 2022-02-16 22-51-05](https://user-images.githubusercontent.com/79658534/154355445-ff562a4c-af48-4fd9-a671-801ac8f1731c.png)
+
 
 ## Author
 
