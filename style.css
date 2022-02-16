@@ -23,11 +23,10 @@ header {
 nav {
   margin: 0 25px;
   padding: 30px 0;
-}
-
-ul {
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav > span {
@@ -46,6 +45,10 @@ li > a {
 
 #menu {
   width: 16px;
+}
+
+.hidden-items {
+  display: none;
 }
 
 /* Headline section */
@@ -67,7 +70,7 @@ section#headline {
 }
 
 h2 {
-  color: #fff5e1;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   padding: 10px 0 10px 0;
@@ -93,7 +96,7 @@ div#headline-icons > ul {
   justify-content: space-around;
 }
 
-div#headline-icons > ul > li > img:hover {
+div#headline-icons > ul > li:hover {
   cursor: pointer;
 }
 
@@ -370,4 +373,109 @@ form {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+/* Media query for desktop version */
+
+@media only screen and (min-width: 992px) {
+  section#headline {
+    height: 100vh;
+    background-color: #1c1a19;
+    background-image: url("images/Illustration-header.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
+
+  div#greeting {
+    width: 566px;
+    position: relative;
+    left: 180px;
+  }
+
+  header {
+    height: 72px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    margin: 0 180px 0 180px;
+  }
+
+  nav > ul {
+    display: flex;
+    gap: 50px;
+  }
+
+  nav > ul > li {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  nav > span {
+    font-size: 20px;
+  }
+
+  .hidden-items {
+    display: inline;
+  }
+
+  .title {
+    font-size: 72px;
+    padding-top: 250px;
+  }
+
+  .title span {
+    display: block;
+  }
+
+  h2 {
+    font-size: 32px;
+    padding: 30px 0 30px 0;
+  }
+
+  .description-p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  div#headline-icons {
+    position: relative;
+    top: -300px;
+    left: 30px;
+  }
+
+  div#headline-icons > ul {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+  }
+
+  section#projects {
+    padding: 100px 180px 100px 180px;
+  }
+
+  #h2-div {
+    display: flex;
+    align-items: baseline;
+  }
+
+  #h2-projects {
+    border-bottom: none;
+    text-align: left;
+    margin-top: 0;
+    width: 315px;
+    display: inline-block;
+  }
+
+  #h2-div div {
+    height: 1px;
+    width: 100%;
+    background-color: #212121;
+  }
 }
