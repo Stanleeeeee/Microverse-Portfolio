@@ -238,7 +238,6 @@ button:hover,
 #submit:hover {
   background-color: #fff5e1;
   color: #ff6b00;
-  border: 1px solid #ff6b00;
   cursor: pointer;
 }
 
@@ -250,6 +249,7 @@ button:focus,
 
 button#resume {
   margin: 15px 0 200px 0;
+  border: none;
 }
 
 /* About-me section */
@@ -336,7 +336,7 @@ div.skills-title {
 
 .inputs {
   padding: 20px;
-  width: 90vw;
+  width: 80vw;
   border: none;
   font-size: 15px;
   line-height: 24px;
