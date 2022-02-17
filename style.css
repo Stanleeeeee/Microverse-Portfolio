@@ -15,15 +15,13 @@ header {
   background-color: #3c3a39;
   color: white;
   font-family: "Roboto", sans-serif;
-  width: 100%;
 }
 
 /* Navbar */
 
 nav {
-  margin: 0 25px;
-  padding: 30px 0;
-  height: 100%;
+  margin: 0 1.5rem;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,13 +36,9 @@ li {
   list-style: none;
 }
 
-li > a {
+a {
   color: white;
   text-decoration: none;
-}
-
-#menu {
-  width: 16px;
 }
 
 .hidden-items {
@@ -57,145 +51,139 @@ section#headline {
   background-color: #1c1a19;
   background-image: url("images/illustration-header-mobile.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
-  padding: 0 20px 180px 20px;
+  background-position: 100% 130%;
+  padding: 0 1.2rem 6rem 1.2rem;
 }
 
 #greeting {
-  width: 85%;
+  padding-right: 1.2rem;
 }
 
 .title {
   color: #ff6b00;
   font-family: "Crete Round", sans-serif;
   font-weight: normal;
-  font-size: 56px;
-  padding-top: 80px;
+  font-size: 3.5rem;
+  padding-top: 5rem;
 }
 
 h2 {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  padding: 10px 0 10px 0;
+  font-size: 1.4rem;
+  padding: 1rem 0 1rem 0;
 }
 
 .description-p {
   color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 
 /* Headline icons */
 
-div#headline-icons {
-  padding-top: 20px;
-  width: 50%;
-}
-
 div#headline-icons > ul {
   color: #dbd8d7;
+  padding-top: 1.2rem;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  gap: 1.2rem;
 }
 
-div#headline-icons > ul > li:hover {
+.icon:hover {
   cursor: pointer;
-}
-
-#i-icon {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-
-#linkedin {
-  display: flex;
-  gap: 3px;
 }
 
 /* Projects section */
 
 section#projects {
-  padding: 0 20px 100px 20px;
+  padding: 0 1.5rem 6rem 1.5rem;
 }
 
 #projects-grid {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 3rem;
 }
 
 #h2-projects {
   color: #1c1a19;
   font-family: "Crete Round", sans-serif;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 6rem;
   border-bottom: 1px solid #212121;
 }
 
+#main-image-div {
+  display: flex;
+  justify-content: center;
+}
+
 #orange-project {
-  margin: 50px 0 20px 0;
+  margin: 3rem 0 1.2rem 0;
 }
 
 #desktop-image {
   display: none;
 }
 
+#main-project-content {
+  padding: 0 1rem 0 0.5rem;
+}
+
 #orange-h3 {
   font-family: "Crete Round", sans-serif;
   color: #091e42;
   font-weight: normal;
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  padding: 0 0 1rem 0;
 }
 
 #orange-p {
   font-family: "Inter", sans-serif;
   color: #091e42;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 h3 {
   font-family: "Crete Round", sans-serif;
   color: #fff;
   font-weight: normal;
-  font-size: 32px;
-  padding: 0 0 20px 10px;
+  font-size: 2rem;
+  padding: 0 0 1.2rem 0.6rem;
 }
 
 div.mini-projects p {
   color: #fff;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 0 0 10px 10px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0 0 0.6rem 0.6rem;
 }
 
 .box {
   border: 1px solid #8993a4;
   font-family: "Inter", sans-serif;
   color: #091e42;
-  padding: 10px 12px 10px 12px;
+  padding: 0.6rem 0.7rem;
   display: inline;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .language-container {
   display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
+  gap: 0.6rem;
+  margin-top: 1rem;
 }
 
 .mini-languages-container {
   display: flex;
-  justify-content: space-between;
-  width: 250px;
-  padding: 0 0 25px 10px;
+  gap: 1rem;
+  padding: 0 0 1.5rem 0.6rem;
 }
 
 .mini-projects {
@@ -206,13 +194,14 @@ div.mini-projects p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-top: 1.5rem;
 }
 
 .mini-box {
   color: #fff;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
-  padding: 10px 12px 10px 12px;
+  font-size: 1rem;
+  padding: 0.6rem 0.7rem;
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -220,22 +209,34 @@ div.mini-projects p {
 
 button,
 #submit {
-  background-color: #f55800;
+  background-color: #ff6b00;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   color: white;
   border: none;
-  font-size: 17px;
-  padding: 12px;
+  font-size: 1.1rem;
+  padding: 0.7rem;
 }
 
 #main-project-button {
-  margin-top: 12px;
+  margin-top: 0.7rem;
 }
 
 #submit {
-  margin-bottom: 100px;
-  width: 131px;
+  margin-bottom: 6rem;
+  animation: change-color infinite 1s;
+  animation-direction: alternate;
+}
+
+@keyframes change-color {
+  from {
+    background-color: #ff6b00;
+  }
+
+  to {
+    background-color: rgb(240, 229, 229);
+    color: #ff6b00;
+  }
 }
 
 button:hover,
@@ -252,7 +253,7 @@ button:focus,
 }
 
 button#resume {
-  margin: 15px 0 200px 0;
+  margin: 1rem 0 12rem 0;
   border: none;
 }
 
@@ -260,7 +261,7 @@ button#resume {
 
 #about-me {
   background-color: #1c1a19;
-  padding: 0 20px 50px 20px;
+  padding: 0 1.2rem 3rem 1.2rem;
 }
 
 div#about-me-description {
@@ -279,7 +280,7 @@ div#about-me-description {
 
 h2.title {
   text-align: center;
-  font-size: 72px;
+  font-size: 4.5rem;
 }
 
 #languages-list,
@@ -288,17 +289,17 @@ h2.title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
+  gap: 2rem;
   color: white;
   font-family: "Inter", sans-serif;
-  font-size: 22px;
+  font-size: 1.3rem;
 }
 
 #skills h3 {
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  margin: 50px 0 50px 0;
+  margin: 3rem 0;
 }
 
 div.skills-title {
@@ -307,8 +308,12 @@ div.skills-title {
 }
 
 .orange-icon {
-  width: 18px;
-  height: 18px;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+#about-me-p {
+  font-size: 1rem;
 }
 
 /* Form section */
@@ -317,46 +322,46 @@ div.skills-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 6rem;
   font-family: "Inter", sans-serif;
 }
 
 #form-section h2 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   color: #172b4d;
   text-align: center;
-  line-height: 44px;
-  padding: 0 30px 0 30px;
+  line-height: 2.5rem;
+  padding: 0 2rem;
 }
 
 #form-section fieldset {
-  margin-top: 50px;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
   border: none;
 }
 
 .inputs {
-  padding: 20px;
+  padding: 1.2rem;
   width: 80vw;
   border: none;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   border-bottom: 1px solid #dbd8d7;
 }
 
 #comments {
-  height: 114px;
+  height: 7rem;
   background-color: #fbf8f7;
   border: none;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .gap {
-  margin-right: 7px;
+  margin-right: 0.5rem;
 }
 
 form {
@@ -364,18 +369,18 @@ form {
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #dfe1e6;
-  padding: 0 30px 0 30px;
+  padding: 0 2rem;
 }
 
 /* Footer */
 
 #form-icons {
   width: 100%;
-  height: 90px;
+  height: 5.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 0.6rem;
 }
 
 /* Media query for desktop version */
@@ -391,13 +396,13 @@ form {
   }
 
   div#greeting {
-    width: 566px;
+    width: 40rem;
     position: relative;
-    left: 180px;
+    left: 20rem;
   }
 
   header {
-    height: 72px;
+    height: 4.5rem;
   }
 
   #menu {
@@ -405,38 +410,38 @@ form {
   }
 
   nav {
-    margin: 0 180px 0 180px;
+    margin: 0 20rem;
   }
 
   nav > ul {
     display: flex;
-    gap: 50px;
+    gap: 5rem;
   }
 
   nav > ul > li {
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 600;
   }
 
   nav > span {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 
   .hidden-items {
     display: inline;
-    font-size: 15px;
-    transition-property: background-color, font-size;
+    font-size: 1rem;
+    transition-property: font-size;
     transition-duration: 1s;
   }
 
   .hidden-items:hover {
-    font-size: 18px;
-    background-color: #f55800;
+    font-size: 1.4rem;
+    text-shadow: 0 0 8px #ff6b00;
   }
 
   .title {
-    font-size: 72px;
-    padding-top: 250px;
+    font-size: 5rem;
+    padding-top: 15rem;
   }
 
   .title span {
@@ -444,27 +449,27 @@ form {
   }
 
   h2 {
-    font-size: 32px;
-    padding: 25px 0 30px 0;
+    font-size: 2rem;
+    padding: 1.2rem 0 1.2rem 0;
   }
 
   .description-p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 
   div#headline-icons {
     position: relative;
-    top: -300px;
-    left: 30px;
+    top: -18.5rem;
+    left: 5rem;
   }
 
   div#headline-icons > ul {
-    height: 200px;
+    height: 12.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 20px;
+    width: 1.2rem;
   }
 
   section#projects {
@@ -476,7 +481,7 @@ form {
 
   #h2-container {
     position: relative;
-    margin: 100px 0 100px 0;
+    margin: 6rem 0;
     width: 65%;
   }
 
@@ -491,8 +496,8 @@ form {
     width: 72%;
     background-color: #212121;
     position: absolute;
-    top: 50px;
-    left: 350px;
+    top: 3rem;
+    left: 22rem;
   }
 
   #orange-project {
@@ -514,23 +519,23 @@ form {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     display: flex;
-    gap: 30px;
+    gap: 2rem;
   }
 
   #orange-h3 {
-    font-size: 40px;
-    padding: 0;
+    font-size: 2.5rem;
+    padding: 0 0 1.5rem 0;
   }
 
   #orange-p {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
   }
 
   .language-container {
     justify-content: flex-start;
-    gap: 13px;
-    margin: 30px 0 20px 0;
+    gap: 0.8rem;
+    margin: 2rem 0 1.2rem 0;
   }
 
   .box {
@@ -548,7 +553,7 @@ form {
   }
 
   h3 {
-    width: 337px;
+    width: 21rem;
   }
 
   #mini-project1,
@@ -613,26 +618,31 @@ form {
   }
 
   div#about-me-description p {
-    width: 566px;
+    width: 50rem;
   }
 
   #about-me {
-    padding: 0 180px 0 180px;
+    padding: 0 11rem;
     background-image: url("images/illustration-about\ me2x.png");
     background-repeat: no-repeat;
     background-size: 40%;
-    background-position: 100% 10%;
+    background-position: right 15%;
+  }
+
+  #about-me-p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 
   #skills {
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
-    padding: 100px 0 100px 0;
+    padding: 6rem 0;
   }
 
   #skills h3 {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
   }
 
   #languages-list,
@@ -644,16 +654,15 @@ form {
   #form-section {
     flex-direction: row;
     align-items: flex-start;
-    gap: 80px;
-    padding: 180px 180px 100px 180px;
+    gap: 5rem;
+    padding: 11rem;
   }
 
-  #form-section h2 {
+  section#form-section h2 {
     padding: 0;
-    line-height: 52px;
-    font-size: 40px;
+    line-height: 4rem;
+    font-size: 3rem;
     text-align: left;
-    width: 450px;
   }
 
   form {
@@ -667,12 +676,12 @@ form {
 
   #form-section fieldset {
     margin: 0;
-    gap: 40px;
+    gap: 2.5rem;
   }
 
   #form-icons {
     border-top: 1px solid #dfe1e6;
-    gap: 20px;
+    gap: 1.2rem;
   }
 
   #form-icons img:hover {
