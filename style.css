@@ -424,6 +424,14 @@ form {
 
   .hidden-items {
     display: inline;
+    font-size: 15px;
+    transition-property: background-color, font-size;
+    transition-duration: 1s;
+  }
+
+  .hidden-items:hover {
+    font-size: 18px;
+    background-color: #f55800;
   }
 
   .title {
