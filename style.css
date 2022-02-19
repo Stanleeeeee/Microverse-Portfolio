@@ -47,6 +47,11 @@ a {
   display: none;
 }
 
+#menu {
+  width: 18px;
+  height: 18px;
+}
+
 /* Headline section */
 
 section#headline {
@@ -90,7 +95,12 @@ div#headline-icons > ul {
   padding-top: 1.2rem;
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  justify-content: space-around;
+  width: 45%;
+}
+
+.right {
+  margin-right: 0.6rem;
 }
 
 .icon:hover {
@@ -113,7 +123,7 @@ section#projects {
   color: #1c1a19;
   font-family: "Crete Round", sans-serif;
   font-weight: normal;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-align: center;
   margin-top: 6rem;
   border-bottom: 1px solid #212121;
@@ -401,7 +411,7 @@ form {
   div#greeting {
     width: 40rem;
     position: relative;
-    left: 20rem;
+    left: 10rem;
   }
 
   header {
@@ -413,7 +423,7 @@ form {
   }
 
   nav {
-    margin: 0 20rem;
+    margin: 0 10rem;
   }
 
   nav > ul {
@@ -464,7 +474,7 @@ form {
   div#headline-icons {
     position: relative;
     top: -18.5rem;
-    left: 5rem;
+    left: 3rem;
   }
 
   div#headline-icons > ul {
@@ -473,6 +483,10 @@ form {
     flex-direction: column;
     justify-content: space-between;
     width: 1.2rem;
+  }
+
+  .right {
+    margin-right: 0;
   }
 
   section#projects {
@@ -633,7 +647,7 @@ form {
   }
 
   #about-me-p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2.5rem;
   }
 
@@ -689,5 +703,42 @@ form {
 
   #form-icons img:hover {
     cursor: pointer;
+  }
+}
+
+/* Media query for bigger mobiles 420px-600px */
+
+@media (min-width: 420px) and (max-width: 600px) {
+  div#greeting {
+    width: 22rem;
+  }
+
+  nav {
+    margin: 0 3rem;
+  }
+
+  section#headline {
+    padding: 0 3rem 6rem 3rem;
+  }
+
+  div#headline-icons > ul {
+    width: 35%;
+  }
+
+  section#projects {
+    padding: 0 4rem 6rem 4rem;
+  }
+
+  #orange-project {
+    display: block;
+    width: 100%;
+  }
+
+  .mini-projects {
+    height: 500px;
+  }
+
+  #about-me-description {
+    padding: 0 2.5rem;
   }
 }
