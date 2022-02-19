@@ -742,3 +742,62 @@ form {
     padding: 0 2.5rem;
   }
 }
+
+/* Media query for tablets */
+
+@media (min-width: 600px) and (max-width: 992px) {
+  nav {
+    margin: 0 4rem;
+  }
+
+  section#headline {
+    padding: 0 4rem 6rem 4rem;
+    background-size: 25%;
+    background-position: bottom right;
+  }
+
+  div#greeting {
+    width: 80%;
+  }
+
+  .title span {
+    display: block;
+  }
+
+  .description-p {
+    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+
+  div#headline-icons > ul {
+    width: 35%;
+  }
+
+  #orange-project {
+    display: block;
+    width: 100%;
+  }
+
+  section#projects {
+    padding: 0 5rem 6rem 5rem;
+  }
+
+  #orange-p {
+    font-size: 1.2rem;
+  }
+
+  .mini-projects {
+    height: 700px;
+    gap: 2rem;
+  }
+
+  div.mini-projects p {
+    padding: 0 1rem 0.6rem 0.6rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+
+  #about-me-description {
+    padding: 0 3rem 3rem 3rem;
+  }
+}
