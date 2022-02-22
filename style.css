@@ -221,10 +221,10 @@ div.mini-projects p {
 
 button,
 #submit {
-  background-color: #ff6b00;
+  background-color: #8c4103;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  color: white;
+  color: #fff;
   border: none;
   font-size: 1.1rem;
   padding: 0.7rem;
@@ -246,8 +246,7 @@ button,
   }
 
   to {
-    background-color: rgb(240, 229, 229);
-    color: #ff6b00;
+    background-color: rgb(7, 0, 0);
   }
 }
 
