@@ -32,6 +32,22 @@ nav {
 nav > span {
   font-size: 1rem;
   font-weight: bold;
+  animation: name-effect 3s;
+}
+
+@keyframes name-effect {
+  from {
+    color: #fff;
+  }
+
+  50% {
+    color: #fc6703;
+    text-shadow: 0 0 20px #fc6703;
+  }
+
+  to {
+    color: #fff;
+  }
 }
 
 li {
@@ -221,7 +237,7 @@ div.mini-projects p {
 
 button,
 #submit {
-  background-color: #8c4103;
+  background-color: #fc6703;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   color: #fff;
@@ -236,18 +252,6 @@ button,
 
 #submit {
   margin-bottom: 6rem;
-  animation: change-color infinite 1s;
-  animation-direction: alternate;
-}
-
-@keyframes change-color {
-  from {
-    background-color: #ff6b00;
-  }
-
-  to {
-    background-color: rgb(7, 0, 0);
-  }
 }
 
 button:hover,
@@ -402,8 +406,8 @@ form {
     background-color: #1c1a19;
     background-image: url("images/Illustration-header.png");
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: contain;
+    background-position: right;
+    background-size: 45%;
     padding-bottom: 3rem;
   }
 
@@ -442,13 +446,6 @@ form {
   .hidden-items {
     display: inline;
     font-size: 1rem;
-    transition-property: font-size;
-    transition-duration: 1s;
-  }
-
-  .hidden-items:hover {
-    font-size: 1.4rem;
-    text-shadow: 0 0 8px #ff6b00;
   }
 
   .title {
@@ -614,6 +611,8 @@ form {
   #mini-project1:hover,
   #mini-project4:hover {
     background: url("images/ImgPlaceholder1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .mini-projects:hover .mini-project-button {
