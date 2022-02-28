@@ -14,6 +14,26 @@ mobileMenu.addEventListener('click', () => {
   mobileMenu.classList.add('hidden');
   exitIcon.classList.add('X');
   envelope.classList.add('hidden');
+
+  listItem.forEach((item) => item.addEventListener('click', () => {
+    listItem.forEach((item) => item.classList.remove('show'));
+    nav.classList.remove('expand');
+    navName.classList.remove('hidden');
+    menuList.classList.remove('ul-list');
+    mobileMenu.classList.remove('hidden');
+    exitIcon.classList.remove('X');
+    envelope.classList.remove('hidden');
+  }));
+});
+
+exitIcon.addEventListener('click', () => {
+  listItem.forEach((item) => item.classList.remove('show'));
+  nav.classList.remove('expand');
+  navName.classList.remove('hidden');
+  menuList.classList.remove('ul-list');
+  mobileMenu.classList.remove('hidden');
+  exitIcon.classList.remove('X');
+  envelope.classList.remove('hidden');
 });
 
 function resetMobileMenu() {
@@ -28,6 +48,4 @@ function resetMobileMenu() {
   }
 }
 
-listItem.forEach((item) => item.addEventListener('click', resetMobileMenu));
-exitIcon.addEventListener('click', resetMobileMenu);
 window.addEventListener('resize', resetMobileMenu);
