@@ -51,12 +51,16 @@ nav {
   padding: 1rem;
 }
 
-nav .ul-list li:nth-child(3),
-li:nth-child(4),
-li:nth-child(5) {
+li {
+  list-style: none;
+}
+
+.ul-list li:nth-child(3),
+.ul-list li:nth-child(4),
+.ul-list li:nth-child(5) {
   border-bottom: thin solid gainsboro;
   padding: 0 0 0.5rem 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   color: #fff5e1;
   font-size: 2.5rem;
   font-weight: 700;
@@ -66,10 +70,6 @@ nav > span {
   font-size: 1rem;
   font-weight: bold;
   animation: name-effect 3s;
-}
-
-.hidden {
-  display: none;
 }
 
 @keyframes name-effect {
@@ -85,10 +85,6 @@ nav > span {
   to {
     color: #fff;
   }
-}
-
-li {
-  list-style: none;
 }
 
 a {
