@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
@@ -29,10 +35,34 @@ nav {
   align-items: center;
 }
 
+.expand {
+  height: 100vh;
+  margin: 0;
+  padding: 1.5rem 0.8rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.ul-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.X {
+  position: relative;
+  left: 90%;
+}
+
 nav > span {
   font-size: 1rem;
   font-weight: bold;
   animation: name-effect 3s;
+}
+
+.hidden {
+  display: none;
 }
 
 @keyframes name-effect {
@@ -61,6 +91,11 @@ a {
 
 .hidden-items {
   display: none;
+}
+
+.show {
+  display: block;
+  width: 100%;
 }
 
 #menu {
