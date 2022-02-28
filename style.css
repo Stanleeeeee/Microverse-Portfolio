@@ -483,6 +483,10 @@ form {
     font-size: 1rem;
   }
 
+  #X {
+    display: none;
+  }
+
   .title {
     font-size: 5rem;
     padding-top: 12rem;
