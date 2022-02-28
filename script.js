@@ -18,10 +18,6 @@ function resetMobileMenu() {
   }
 }
 
-window.addEventListener("resize", resetMobileMenu);
-
-exitIcon.addEventListener("click", resetMobileMenu);
-
 mobileMenu.addEventListener("click", () => {
   listItem.forEach((item) => item.classList.add("show"));
   nav.classList.add("expand");
@@ -32,4 +28,7 @@ mobileMenu.addEventListener("click", () => {
   envelope.classList.add("hidden");
 
   listItem.forEach((item) => item.addEventListener("click", resetMobileMenu));
+  exitIcon.addEventListener("click", resetMobileMenu);
 });
+
+window.addEventListener("resize", resetMobileMenu);
