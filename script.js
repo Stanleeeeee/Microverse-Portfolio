@@ -6,6 +6,16 @@ const menuList = document.querySelector('nav ul');
 const exitIcon = document.querySelector('.exit');
 const envelope = document.querySelector('#envelope');
 
+function resetMobileMenu() {
+  listItem.forEach((item) => item.classList.remove('show'));
+  nav.classList.remove('expand');
+  navName.classList.remove('hidden');
+  menuList.classList.remove('ul-list');
+  mobileMenu.classList.remove('hidden');
+  exitIcon.classList.remove('X');
+  envelope.classList.remove('hidden');
+}
+
 mobileMenu.addEventListener('click', () => {
   listItem.forEach((item) => item.classList.add('show'));
   nav.classList.add('expand');
@@ -15,37 +25,15 @@ mobileMenu.addEventListener('click', () => {
   exitIcon.classList.add('X');
   envelope.classList.add('hidden');
 
-  listItem.forEach((item) => item.addEventListener('click', () => {
-    listItem.forEach((item) => item.classList.remove('show'));
-    nav.classList.remove('expand');
-    navName.classList.remove('hidden');
-    menuList.classList.remove('ul-list');
-    mobileMenu.classList.remove('hidden');
-    exitIcon.classList.remove('X');
-    envelope.classList.remove('hidden');
-  }));
+  listItem.forEach((item) => item.addEventListener('click', resetMobileMenu));
 });
 
-exitIcon.addEventListener('click', () => {
-  listItem.forEach((item) => item.classList.remove('show'));
-  nav.classList.remove('expand');
-  navName.classList.remove('hidden');
-  menuList.classList.remove('ul-list');
-  mobileMenu.classList.remove('hidden');
-  exitIcon.classList.remove('X');
-  envelope.classList.remove('hidden');
-});
+exitIcon.addEventListener('click', resetMobileMenu);
 
-function resetMobileMenu() {
+function resizeWindow() {
   if (window.innerWidth > 600) {
-    listItem.forEach((item) => item.classList.remove('show'));
-    nav.classList.remove('expand');
-    navName.classList.remove('hidden');
-    menuList.classList.remove('ul-list');
-    mobileMenu.classList.remove('hidden');
-    exitIcon.classList.remove('X');
-    envelope.classList.remove('hidden');
+    resetMobileMenu();
   }
 }
 
-window.addEventListener('resize', resetMobileMenu);
+window.addEventListener('resize', resizeWindow);
