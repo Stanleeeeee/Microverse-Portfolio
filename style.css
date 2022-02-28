@@ -48,21 +48,28 @@ nav {
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  padding: 1rem;
 }
 
-.X {
-  position: relative;
-  left: 90%;
+li {
+  list-style: none;
+}
+
+.ul-list li:nth-child(3),
+.ul-list li:nth-child(4),
+.ul-list li:nth-child(5) {
+  border-bottom: thin solid gainsboro;
+  padding: 0 0 0.5rem 1rem;
+  margin-bottom: 0.8rem;
+  color: #fff5e1;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 nav > span {
   font-size: 1rem;
   font-weight: bold;
   animation: name-effect 3s;
-}
-
-.hidden {
-  display: none;
 }
 
 @keyframes name-effect {
@@ -78,10 +85,6 @@ nav > span {
   to {
     color: #fff;
   }
-}
-
-li {
-  list-style: none;
 }
 
 a {
@@ -101,6 +104,16 @@ a {
 #menu {
   width: 18px;
   height: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.X {
+  display: block;
+  position: relative;
+  left: 90%;
 }
 
 /* Headline section */
@@ -481,6 +494,10 @@ form {
   .hidden-items {
     display: inline;
     font-size: 1rem;
+  }
+
+  #X {
+    display: none;
   }
 
   .title {
