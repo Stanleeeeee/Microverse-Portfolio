@@ -48,11 +48,12 @@ nav {
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  padding: 1rem;
 }
 
-.X {
-  position: relative;
-  left: 90%;
+.ul-list li:nth-child(3), li:nth-child(4), li:nth-child(5) {
+  border-bottom: 2px solid;
+  padding-bottom: 0.3rem;
 }
 
 nav > span {
@@ -101,6 +102,16 @@ a {
 #menu {
   width: 18px;
   height: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.X {
+  display: block;
+  position: relative;
+  left: 90%;
 }
 
 /* Headline section */
