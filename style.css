@@ -173,6 +173,17 @@ div#headline-icons > ul {
 
 /* Projects section */
 
+.popup {
+  width: 80vw;
+  height: 90vh;
+  background-color: #fc6703;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
 section#projects {
   padding: 0 1.5rem 6rem 1.5rem;
 }
