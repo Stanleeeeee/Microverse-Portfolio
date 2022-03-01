@@ -55,10 +55,12 @@ function createInfo(button) {
   // const projetPragraph = document.querySelectorAll('[data-p]');
   const projetsTitle = document.querySelector(`${button.dataset.btn} [data-title]`)
   const projetPragraph = document.querySelector(`${button.dataset.btn} [data-p]`);
-  object.title =  `${projetsTitle.textContent}`,
-  object.pragraph =  `${projetPragraph.innerHTML}`;
-  console.log(object);
+  // object.title =  `${projetsTitle.textContent}`,
+  // object.pragraph =  `${projetPragraph.innerHTML}`;
+  object.title = projetsTitle;
+  object.pragraph = projetPragraph;
   projects.push(object);
+  console.log(object);
   console.log(projects);
   createDiv();
 }
@@ -66,8 +68,11 @@ function createInfo(button) {
 function createDiv() {
   let div = document.createElement("div");
   div.setAttribute("class", "popup");
-  for (let item in projects[0]){
-    div.appendChild(item);
+  // div.innerHTML = `<p>${projects[0].title}</p>`;
+  // div.innerHTML = `<p>${projects[0].pragraph}</p>`;
+  for (let items of Object.values(projects[0])) {
+    console.log(items);
+    div.appendChild(items);
   }
   projectsSection.appendChild(div);
 }
