@@ -45,18 +45,35 @@ window.addEventListener("resize", resizeWindow);
 /* Project section */
 
 const projects = [
-  {
-    title: "Multi-Post Stories",
-  },
+  
 ];
 
-function createInfo() {}
+
+function createInfo(button) {
+  let object = {};
+  // const projetsTitles = document.querySelectorAll('[data-title]');
+  // const projetPragraph = document.querySelectorAll('[data-p]');
+  const projetsTitle = document.querySelector(`${button.dataset.btn} [data-title]`)
+  const projetPragraph = document.querySelector(`${button.dataset.btn} [data-p]`);
+  object.title =  `${projetsTitle.textContent}`,
+  object.pragraph =  `${projetPragraph.innerHTML}`;
+  console.log(object);
+  projects.push(object);
+  console.log(projects);
+  createDiv();
+}
 
 function createDiv() {
   let div = document.createElement("div");
   div.setAttribute("class", "popup");
+  for (let item in projects[0]){
+    div.appendChild(item);
+  }
   projectsSection.appendChild(div);
-  createInfo();
 }
 
-btn.forEach((button) => button.addEventListener("click", createDiv));
+btn.forEach((button) => {
+  button.addEventListener('click', () => {
+    createInfo(button);
+  })
+});
