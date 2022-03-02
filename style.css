@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Header */
 
 header {
@@ -92,7 +96,8 @@ a {
   text-decoration: none;
 }
 
-.hidden-items {
+.hidden-items,
+.hidden {
   display: none;
 }
 
@@ -104,10 +109,6 @@ a {
 #menu {
   width: 18px;
   height: 18px;
-}
-
-.hidden {
-  display: none;
 }
 
 .X {
@@ -174,18 +175,134 @@ div#headline-icons > ul {
 /* Projects section */
 
 .popup {
-  width: 80vw;
-  height: 90vh;
-  background-color: #fc6703;
+  width: 85vw;
+  height: 92vh;
+  padding: 1.8rem 1.2rem 1rem 1.2rem;
+  background-color: #f3f1f1;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: all 0.5s;
+}
+
+.blur {
+  filter: blur(20px);
+}
+
+.popup-title {
+  color: black;
+  display: inline;
+  word-spacing: 0.6rem;
+  font-size: 3rem;
+}
+
+.popup-languages {
+  margin: 1rem 0 1.3rem 0;
+}
+
+.popup-languages > div {
+  color: black;
+  border: 1px solid black;
+}
+
+.popup-paragraph {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2;
+  display: block;
+  float: right;
+  width: 38%;
+  margin-left: 1rem;
+}
+
+.popup-btn {
+  position: absolute;
+  top: 86%;
+  left: 62%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.popup-btn:hover {
+  outline: thin solid #fc6703;
+}
+
+.live::after {
+  content: url(icons/Iconlive.svg);
+}
+
+.source::after {
+  content: url(icons/Github.png);
+}
+
+.popup-margin {
+  margin-left: 9rem;
+}
+
+.popup-exit {
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  background-color: #f3f1f1;
+}
+
+.popup-exit:hover {
+  background-color: #f3f1f1;
+}
+
+.popup-img {
+  display: block;
+  float: left;
+  width: 60%;
+  height: 75%;
+  object-fit: cover;
+  object-position: 0% 20%;
+  border: thin solid rgb(196, 195, 195);
+}
+
+.popup-mobile-img {
+  width: 100%;
+  height: 28%;
+  object-fit: cover;
+  object-position: unset;
+}
+
+.popup-mobile-p {
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.mobile-btn {
+  top: 92%;
+  left: 5%;
+}
+
+.mobile-title {
+  font-size: 1.8rem;
+  text-align: left;
+  display: block;
+  padding: 0;
+}
+
+.mobile-languages {
+  margin: 0.5rem 0;
+}
+
+.mobile-languages > div {
+  font-size: 0.8rem;
+}
+
+.mobile-width {
+  width: 90vw;
+  height: 95vh;
+  padding: 1rem;
 }
 
 section#projects {
   padding: 0 1.5rem 6rem 1.5rem;
+  position: relative;
 }
 
 #projects-grid {
@@ -200,7 +317,7 @@ section#projects {
   font-weight: normal;
   font-size: 2.3rem;
   text-align: center;
-  margin-top: 6rem;
+  margin: 6rem 0 3rem 0;
   border-bottom: 1px solid #212121;
 }
 
@@ -210,11 +327,8 @@ section#projects {
 }
 
 #orange-project {
-  margin: 3rem 0 1.2rem 0;
-}
-
-#desktop-image {
-  display: none;
+  display: block;
+  width: 80vw;
 }
 
 #main-project-content {
@@ -226,7 +340,7 @@ section#projects {
   color: #091e42;
   font-weight: normal;
   font-size: 2rem;
-  padding: 0 0 1rem 0;
+  padding: 1.5rem 0 1rem 0;
 }
 
 #orange-p {
@@ -576,10 +690,6 @@ form {
     background-color: #212121;
   }
 
-  #orange-project {
-    display: none;
-  }
-
   #projects-grid {
     grid-column: 2 / 3;
     grid-row: 2 / -1;
@@ -587,25 +697,21 @@ form {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  #desktop-image {
-    display: block;
-    width: 150%;
-  }
-
   #main-project {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     display: flex;
+    align-items: flex-start;
     gap: 2rem;
   }
 
-  #main-image-div {
-    display: none;
+  #orange-project {
+    width: unset;
   }
 
   #orange-h3 {
     font-size: 2.5rem;
-    padding: 0 0 1.5rem 0;
+    padding: 0 0 2rem 0;
   }
 
   #orange-p {
@@ -667,13 +773,6 @@ form {
   .mini-projects:hover {
     cursor: pointer;
     border: 2px solid black;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #mini-project1:hover,
-  #mini-project4:hover {
-    background: url("images/ImgPlaceholder1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
