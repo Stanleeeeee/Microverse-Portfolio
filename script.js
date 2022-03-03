@@ -5,8 +5,6 @@ const navName = document.querySelector('#name');
 const menuList = document.querySelector('nav ul');
 const exitIcon = document.querySelector('.exit');
 const envelope = document.querySelector('#envelope');
-const buttons = document.querySelectorAll('#projects button');
-const btn = Array.from(buttons);
 const projectsSection = document.querySelector('#projects');
 const blurProjects = document.querySelectorAll('#projects > div');
 
@@ -178,8 +176,56 @@ function createDiv(buttonId) {
   });
 }
 
-for (let i = 0; i < btn.length; i += 1) {
-  btn[i].addEventListener('click', () => {
+const grid = document.getElementById('projects-grid');
+function createProjectsContainer() {
+  for (let i = 1; i < projects.length; i += 1) {
+    const projectContainer = document.createElement('div');
+    projectContainer.setAttribute('class', 'mini-projects');
+    projectContainer.setAttribute('id', `mini-project${i}`);
+    grid.appendChild(projectContainer);
+  }
+}
+createProjectsContainer();
+
+const workSectionDiv = document.querySelectorAll('.mini-projects');
+
+let counter = 0;
+function createElements(project) {
+  project.innerHTML = `
+          <img
+            src=${projects[counter].image}
+            alt="project"
+            class="hidden"
+            data-img="image"
+          />
+          <h3 class="mini-h3" data-title="title">
+          ${projects[counter].title}
+          </h3>
+          <p class="mini-p" data-p="paragraph">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
+          <div class="mini-languages-container" data-language="language-list">
+            <div class="mini-box"><span>html</span></div>
+            <div class="mini-box"><span>bootstrap</span></div>
+            <div class="mini-box"><span>Ruby</span></div>
+          </div>
+          <button
+            type="button"
+            class="btn project-btn"
+            id="mini-project-btn${counter + 1}"
+          >
+            See Project
+          </button>`;
+  counter += 1;
+}
+
+workSectionDiv.forEach(createElements);
+
+const buttons = [...document.querySelectorAll('.project-btn')];
+
+for (let i = 0; i < buttons.length; i += 1) {
+  buttons[i].addEventListener('click', () => {
     createDiv(i);
     document.body.style.background = 'black';
     document.body.classList.toggle('no-scroll');
