@@ -218,7 +218,11 @@
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </h2>
-      <form action="https://formspree.io/f/moqrdeno" method="POST">
+      <form
+        action="https://formspree.io/f/moqrdeno"
+        method="POST"
+        id="contact-form"
+      >
         <fieldset>
           <input
             class="inputs"
@@ -237,6 +241,7 @@
             placeholder="Email"
             required
           />
+
           <textarea
             name="comments"
             id="comments"
@@ -245,6 +250,9 @@
           ></textarea>
         </fieldset>
         <input type="submit" id="submit" name="submit" value="Get in touch" />
+        <small class="small hidden show"
+          >Please, enter valid Email: lower case only.</small
+        >
       </form>
     </section>
     <!--Footer-->
