@@ -443,7 +443,7 @@ button,
 }
 
 #submit {
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 button:hover,
@@ -576,7 +576,7 @@ form {
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #dfe1e6;
-  padding: 0 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
 input:valid {
