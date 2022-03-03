@@ -237,16 +237,15 @@ for (let i = 0; i < buttons.length; i += 1) {
 
 const form = document.getElementById("contact-form");
 const email = document.getElementById("email");
-const lowerCaseRegex = /^[a-z0-9_\-]+$/;
+const lowerCaseRegex = /[A-Z]/;
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  if (!lowerCaseRegex.test(email)) {
+  if (lowerCaseRegex.test(email.value)) {
+    e.preventDefault();
     const errorMessage = document.createElement("div");
     errorMessage.innerHTML = `<span>Please, enter only lower case letters </span>`;
     errorMessage.style.color = "red";
-    console.log(errorMessage);
+
     form.appendChild(errorMessage);
   }
 });
