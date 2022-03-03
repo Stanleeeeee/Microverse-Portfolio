@@ -240,12 +240,11 @@ const email = document.getElementById("email");
 const lowerCaseRegex = /[A-Z]/;
 
 form.addEventListener("submit", (e) => {
-  if (lowerCaseRegex.test(email.value)) {
+  if (lowerCaseRegex.test(email.value.trim())) {
     e.preventDefault();
-    const errorMessage = document.createElement("div");
-    errorMessage.innerHTML = `<span>Please, enter only lower case letters </span>`;
-    errorMessage.style.color = "red";
-
-    form.appendChild(errorMessage);
+    const errorMessage = document.querySelector('small');
+    console.log(errorMessage);
+    errorMessage.classList.remove('hidden');
+    console.log('hello');
   }
 });
