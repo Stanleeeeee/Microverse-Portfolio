@@ -262,9 +262,3 @@ form.addEventListener("change", () => {
 
   localStorage.setItem("storageInfo", JSON.stringify(myStorage));
 });
-
-// const myStorageObject = JSON.parse(localStorage.getItem("storageInfo"));
-
-// document.getElementById("fullname").value = myStorageObject.name;
-// document.getElementById("email").value = myStorageObject.email;
-// document.getElementById("comments").value = myStorageObject.message;
