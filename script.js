@@ -256,9 +256,17 @@ const myStorage = {
 };
 
 form.addEventListener("change", () => {
+  console.log('adf');
   myStorage.name = document.getElementById("fullname").value;
   myStorage.email = document.getElementById("email").value;
   myStorage.message = document.getElementById("comments").value;
-
   localStorage.setItem("storageInfo", JSON.stringify(myStorage));
 });
+
+const storageObject = JSON.parse(localStorage.getItem("storageInfo"));
+console.log(myStorage);
+console.log(storageObject);
+
+document.getElementById("fullname").value = storageObject.name;
+document.getElementById("email").value = storageObject.email ;
+document.getElementById("comments").value =storageObject.message;
