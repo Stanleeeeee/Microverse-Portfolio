@@ -246,3 +246,24 @@ form.addEventListener('submit', (e) => {
     errorMessage.classList.remove('hidden');
   }
 });
+
+/* Local storage */
+
+const myStorage = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+form.addEventListener('change', () => {
+  myStorage.name = document.getElementById('fullname').value;
+  myStorage.email = document.getElementById('email').value;
+  myStorage.message = document.getElementById('comments').value;
+  localStorage.setItem('storageInfo', JSON.stringify(myStorage));
+});
+
+const storageObject = JSON.parse(localStorage.getItem('storageInfo'));
+
+document.getElementById('fullname').value = storageObject.name;
+document.getElementById('email').value = storageObject.email;
+document.getElementById('comments').value = storageObject.message;
